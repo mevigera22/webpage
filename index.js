@@ -1,15 +1,12 @@
-const yesBtn = document.querySelector('#yesBtn');
-
-yesBtn.addEventListener('click',function () {
-    alert('Sabia que ibas a decir que si uwu')
+const yesBtn=document.querySelector('#yesBtn');
+yesBtn.addEventListener('click',function(){
+    alert('Te invitamos a crecer 30 cm mas por favor :p')
 });
-
-const noBtn = document.querySelector('#noBtn');
-
-noBtn.addEventListener('mouseover', function () {
-    const randomX = parseInt(Math.random()*100);
-    const randomY = parseInt(Math.random()*100);
-    noBtn.style.setProperty('top',randomY+'%');
-    noBtn.style.setProperty('left',randomX+'%');
-    noBtn.style.setProperty('transform',`translate(-${randomX}%,-${randomY}%)`);
-})
+const noBtn=document.querySelector('#noBtn');
+noBtn.addEventListener('mouseover',function(){
+    const randomx=parseInt(Math.random()*100);
+    const randomy=parseInt(Math.random()*100);
+    noBtn.style.setProperty('top',randomy+'%');
+    noBtn.style.setProperty('left',randomx+'%');
+    noBtn.style.setProperty('transform',`translate(-${randomx}%,-${randomy}%)`);
+});
